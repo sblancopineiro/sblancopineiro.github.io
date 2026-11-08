@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sergio Blanco Piñeiro</title>
+<meta name="description" content="Sergio Blanco Piñeiro — PhD candidate in Economics at IAE-CSIC and IEB. Labor and family economics, causal inference, applied econometrics.">
+<link rel="canonical" href="https://sblancopineiro.github.io/">
+<meta name="author" content="Sergio Blanco Piñeiro">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Sergio Blanco Piñeiro">
+<meta property="og:description" content="PhD candidate in Economics at IAE-CSIC and IEB. Labor and family economics, causal inference, applied econometrics.">
+<meta property="og:url" content="https://sblancopineiro.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sergio Blanco Piñeiro",
+  "url": "https://sblancopineiro.github.io/",
+  "jobTitle": "PhD Candidate in Economics",
+  "email": "mailto:sergioblanco@ub.edu",
+  "affiliation": [
+    {"@type": "Organization", "name": "Institut d'Anàlisi Econòmica (IAE-CSIC)", "url": "https://www.iae.csic.es/"},
+    {"@type": "Organization", "name": "Institut d'Economia de Barcelona (IEB)", "url": "https://ieb.ub.edu/"}
+  ],
+  "knowsAbout": ["Labor economics", "Family economics", "Causal inference", "Applied econometrics"],
+  "sameAs": [
+    "https://ieb.ub.edu/researcher/blanco-pineiro-sergio/",
+    "https://x.com/Sergio_BlancoP",
+    "https://www.linkedin.com/in/sergio-blancop/",
+    "https://github.com/sblancopineiro"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfbfc;
+  --card:#ffffff;
+  --ink:#15191f;
+  --muted:#5c6672;
+  --rule:#e3e6ea;
+  --accent:#17495b;
+  --accent-soft:#eaf1f3;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(23,73,91,.28)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:20;background:rgba(251,251,252,.92);
+  backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--rule);
+}
+.topbar-in{
+  max-width:var(--maxw);margin:0 auto;padding:14px 24px;
+  display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.brand{
+  font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:1.06rem;
+  color:var(--ink);border:0;letter-spacing:.01em;
+}
+.navlinks{display:flex;gap:22px;font-size:.93rem}
+.navlinks a{color:var(--muted);border:0;padding-bottom:2px;border-bottom:1px solid transparent}
+.navlinks a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+
+/* ---------- layout ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.grid{display:grid;grid-template-columns:262px 1fr;gap:56px;padding:56px 0 40px}
+@media (max-width:860px){.grid{grid-template-columns:1fr;gap:38px;padding-top:36px}}
+
+/* ---------- profile ---------- */
+.profile{position:sticky;top:104px;align-self:start;text-align:center}
+@media (max-width:860px){.profile{position:static;text-align:left}}
+.avatar{
+  width:168px;height:168px;border-radius:50%;object-fit:cover;object-position:50% 10%;display:block;margin:0 auto 20px;
+  background:var(--accent-soft);border:1px solid var(--rule);
+}
+@media (max-width:860px){.avatar{margin-left:0;width:132px;height:132px}}
+.pname{
+  font-family:"Source Serif 4",Georgia,serif;font-size:1.5rem;font-weight:600;
+  line-height:1.25;margin:0 0 6px;letter-spacing:-.005em;
+}
+.prole{font-size:.95rem;color:var(--ink);margin:0 0 12px;font-weight:500}
+.paffil{font-size:.87rem;color:var(--muted);line-height:1.55;margin:0 0 20px}
+.paffil a{color:var(--muted);border-bottom-color:rgba(92,102,114,.3)}
+.paffil a:hover{color:var(--accent)}
+.icons{display:flex;gap:14px;justify-content:center;margin-bottom:22px}
+@media (max-width:860px){.icons{justify-content:flex-start}}
+.icons a{
+  width:36px;height:36px;border:1px solid var(--rule);border-radius:50%;
+  display:grid;place-items:center;color:var(--muted);background:var(--card);
+  transition:color .15s ease,border-color .15s ease;
+}
+.icons a:hover{color:var(--accent);border-color:var(--accent)}
+.icons svg{width:17px;height:17px;fill:currentColor}
+.cvbtn{
+  display:inline-block;padding:9px 20px;border-radius:2px;border:1px solid var(--accent);
+  background:var(--accent);color:#fff;font-size:.9rem;font-weight:500;
+  transition:background .15s ease;
+}
+.cvbtn:hover{background:#0f3341;border-color:#0f3341}
+
+/* ---------- main ---------- */
+.lead{font-size:1.06rem;line-height:1.72;margin:0 0 1.15em}
+.lead:first-child{margin-top:-6px}
+section{padding-top:46px}
+section:first-of-type{padding-top:0}
+h2{
+  font-family:"Source Serif 4",Georgia,serif;font-size:1.42rem;font-weight:600;
+  margin:0 0 4px;letter-spacing:-.01em;
+}
+.h2rule{height:2px;width:44px;background:var(--accent);margin-bottom:26px}
+h3{
+  font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem;font-weight:600;
+  color:var(--muted);margin:34px 0 16px;
+}
+h3:first-of-type{margin-top:0}
+
+/* ---------- papers ---------- */
+.paper{padding:20px 0;border-top:1px solid var(--rule)}
+.paper:first-of-type{border-top:0;padding-top:4px}
+.ptitle{
+  font-family:"Source Serif 4",Georgia,serif;font-size:1.14rem;font-weight:600;
+  line-height:1.4;margin:0 0 5px;
+}
+.pauth{font-size:.94rem;color:var(--muted);margin:0 0 9px}
+.pauth a{color:var(--muted);border-bottom-color:rgba(92,102,114,.3)}
+.pauth a:hover{color:var(--accent)}
+.venue{
+  font-size:.95rem;font-weight:600;color:var(--accent);
+  border-bottom:1px solid rgba(23,73,91,.35);
+}
+.venue:hover{border-bottom-color:var(--accent)}
+.pmeta{font-size:.95rem;margin:0 0 10px}
+.presented{
+  font-size:.86rem;color:var(--muted);line-height:1.6;margin:10px 0 0;
+  padding-left:14px;border-left:2px solid var(--rule);
+}
+details{margin-top:12px}
+summary{
+  cursor:pointer;font-size:.88rem;color:var(--muted);
+  list-style:none;display:inline-block;border-bottom:1px dotted var(--muted);
+}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--accent);border-bottom-color:var(--accent)}
+details[open] summary{margin-bottom:10px}
+.abstract{font-size:.93rem;color:var(--muted);line-height:1.68;margin:0;max-width:66ch}
+.plinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.plinks a{
+  font-size:.82rem;padding:4px 11px;border:1px solid var(--rule);border-radius:2px;
+  color:var(--muted);background:var(--card);
+}
+.plinks a:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ---------- teaching / contact ---------- */
+.tlist{list-style:none;padding:0;margin:0}
+.tlist li{padding:12px 0;border-top:1px solid var(--rule);font-size:.97rem}
+.tlist li:first-child{border-top:0;padding-top:0}
+.tlist .twhen{color:var(--muted);font-size:.88rem}
+.contact p{margin:0 0 8px;font-size:.98rem}
+
+footer{
+  border-top:1px solid var(--rule);margin-top:60px;padding:26px 0 44px;
+  font-size:.84rem;color:var(--muted);
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">Sergio Blanco Piñeiro</a>
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+<div class="grid">
+
+  <!-- ============ profile column ============ -->
+  <aside class="profile">
+    <img class="avatar" src="data:image/jpeg;base64,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" alt="Sergio Blanco Piñeiro"
+         onerror="this.style.display='none'">
+    <h1 class="pname">Sergio Blanco Piñeiro</h1>
+    <p class="prole">PhD Candidate in Economics</p>
+    <p class="paffil">
+      <a href="https://www.iae.csic.es/">Institut d'Anàlisi Econòmica</a> (IAE-CSIC)<br>
+      <a href="https://ieb.ub.edu/researcher/blanco-pineiro-sergio/">Institut d'Economia de Barcelona</a> (IEB)
+    </p>
+
+    <div class="icons">
+      <a href="mailto:sergioblanco@ub.edu" aria-label="Email" title="sergioblanco@ub.edu">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+      </a>
+      <a href="https://x.com/Sergio_BlancoP" aria-label="X" title="X">
+        <svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.96 6.82H1.69l7.73-8.84L1.27 2.25h6.82l4.71 6.23zm-1.16 17.52h1.83L7.02 4.13H5.05z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/sergio-blancop/" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></svg>
+      </a>
+    </div>
+
+    <a class="cvbtn" href="https://www.dropbox.com/scl/fi/h7zl00djier43fwb9fc6p/cv.pdf?rlkey=ygwjle8aclz2c72ool4y483k6&amp;dl=1" target="_blank" rel="noopener">Download CV</a>
+  </aside>
+
+  <!-- ============ main column ============ -->
+  <main>
+
+    <section id="about">
+      <p class="lead">
+        I am a PhD candidate in Economics at the
+        <a href="https://www.iae.csic.es/">Institut d'Anàlisi Econòmica</a> of the
+        <a href="https://www.csic.es/es">Consejo Superior de Investigaciones Científicas</a> (IAE-CSIC)
+        and an affiliated researcher at the
+        <a href="https://ieb.ub.edu/researcher/blanco-pineiro-sergio/">Institut d'Economia de Barcelona</a> (IEB).
+        Previously I worked as a research assistant at the
+        <a href="https://economics.uc3m.es/">Universidad Carlos III de Madrid</a> and at the IAE-CSIC,
+        collaborating on projects in labor economics, gender economics and migration.
+      </p>
+      <p class="lead">
+        My research interests lie in labor and family economics, with a particular focus on
+        causal inference and applied econometrics. I work mainly with large administrative
+        microdata to evaluate how public policies shape family formation, dissolution and
+        labor-market outcomes.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="h2rule"></div>
+
+      <h3>Publications</h3>
+
+      <article class="paper">
+        <p class="ptitle">Improving Social Inclusion of Female Migrants: A Randomised Controlled Intervention in Spain</p>
+        <p class="pauth">
+          with <a href="https://economia.uc3m.es/acabrales/index.html">Antonio Cabrales</a>
+          and <a href="https://npwarn.wixsite.com/warn-lekfuangfu">Warn N. Lekfuangfu</a>
+        </p>
+        <p class="pmeta">
+          <a class="venue" href="https://link.springer.com/article/10.1007/s13209-026-00332-5">SERIEs, Journal of the Spanish Economic Association</a>, 2026.
+        </p>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">
+            This study evaluates the impact of a randomised controlled intervention that provided
+            psychosocial support and digital skills training to socially excluded female migrants
+            living in Murcia, Spain, all of whom were also beneficiaries of the Minimum Basic Income
+            Scheme. The programme significantly improves participants' knowledge of community
+            resources, use of social support networks, digital skills and mental well-being. We find
+            no effects on employment or labour-market participation, based on both survey responses
+            and administrative records. Non-financial interventions can therefore enhance social
+            inclusion and personal well-being even when they do not improve labour-market outcomes
+            in the short run.
+          </p>
+        </details>
+        <div class="plinks">
+          <a href="https://link.springer.com/article/10.1007/s13209-026-00332-5">Published version</a>
+          <a href="https://link.springer.com/content/pdf/10.1007/s13209-026-00332-5.pdf">PDF</a>
+          <a href="https://www.rfberlin.com/network-paper/improving-social-inclusion-of-female-migrants-a-randomised-controlled-intervention-in-spain/">RFBerlin DP</a>
+        </div>
+        <p class="presented">
+          Presented at the Barcelona School of Economics PhD Jamboree; the Early Career &amp; PhD
+          Workshop on SocioEconomic Mobility and Public Policies (University of Alcalá); the
+          2nd UAM-UJI Workshop on the Economics of Health and Human Capital; the XVII Jornadas
+          de Economía Laboral (Oviedo); and the
+          50th Simposio de la Asociación Española de Economía (Bellaterra, Barcelona).
+        </p>
+      </article>
+
+      <h3>Work in progress</h3>
+
+      <article class="paper">
+        <p class="ptitle">Fathers at Home: The Role of Paternity Leave in Family Formation and Dissolution</p>
+        <p class="pauth">
+          with <a href="https://sites.google.com/site/ruizvalenjenifer/">Jenifer Ruiz-Valenzuela</a>,
+          <a href="https://sites.google.com/site/lidiafarre78/home">Lídia Farré</a>
+          and <a href="https://sites.google.com/view/claudiahupkau/home">Claudia Hupkau</a>
+        </p>
+        <p class="pmeta">Draft coming soon.</p>
+        <p class="presented">
+          Presented at the Internal Work in Progress (IWIP) seminar, IEB, and the PhD seminar,
+          University of Barcelona. Scheduled for the
+          51st Simposio de la Asociación Española de Economía
+          (Las Palmas de Gran Canaria, December 2026) and the
+          24th Divorce Conference
+          (University of Copenhagen, October 2026).
+        </p>
+      </article>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="h2rule"></div>
+      <ul class="tlist">
+        <li>
+          Teaching Assistant, Mathematical Optimization for Economics
+          <span class="twhen">— Universidad Carlos III de Madrid, 2022–2023</span>
+        </li>
+        <li>
+          Teaching Assistant, Macroeconomics
+          <span class="twhen">— Universidad Carlos III de Madrid, 2022–2023</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <div class="h2rule"></div>
+      <p><a href="mailto:sergioblanco@ub.edu">sergioblanco@ub.edu</a></p>
+      <p><a href="mailto:sblancopineiro@gmail.com">sblancopineiro@gmail.com</a></p>
+      <p>Institut d'Anàlisi Econòmica (IAE-CSIC), Campus UAB, Bellaterra, Barcelona</p>
+    </section>
+
+  </main>
+</div>
+
+<footer>© 2026 Sergio Blanco Piñeiro</footer>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function go(e){
+    var href = this.getAttribute("href") || "";
+    if (href.charAt(0) !== "#") return;
+    var target = 0;
+    if (href !== "#top") {
+      var el = document.getElementById(href.slice(1));
+      if (!el) return;
+      var bar = document.querySelector(".topbar");
+      var off = bar ? bar.getBoundingClientRect().height + 8 : 60;
+      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      target = el.getBoundingClientRect().top + y - off;
+      if (target < 0) target = 0;
+    }
+    e.preventDefault();
+    try { window.scrollTo({ top: target, behavior: reduce ? "auto" : "smooth" }); }
+    catch (err) { window.scrollTo(0, target); }
+  }
+  var links = document.querySelectorAll(".topbar a[href^='#']");
+  for (var i = 0; i < links.length; i++) { links[i].addEventListener("click", go); }
+})();
+</script>
+</body>
+</html>
